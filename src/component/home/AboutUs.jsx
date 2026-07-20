@@ -35,7 +35,7 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 to-white">
       {/* Main About Section */}
-      <div className="container mx-auto px-4 py-16 md:py-24">
+      <div className="container mx-auto px-6 py-16 md:pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           {/* Left Column - Image Only (No Play Button Center Overlay) */}

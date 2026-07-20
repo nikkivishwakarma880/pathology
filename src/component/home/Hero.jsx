@@ -46,10 +46,10 @@ const Hero = () => {
         <div className="lg:col-span-8 flex flex-col space-y-7 text-left">
           
           {/* Small Badge */}
-          <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-4 py-2 rounded-full text-xs font-semibold tracking-wide w-fit backdrop-blur-md">
+          {/* <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-4 py-2 rounded-full text-xs font-semibold tracking-wide w-fit backdrop-blur-md">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
             Trusted Diagnostic Laboratory Since 2010
-          </div>
+          </div> */}
 
           {/* Main Typography */}
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-white">
@@ -60,7 +60,7 @@ const Hero = () => {
           </h1>
 
           {/* Description Paragraph */}
-          <p className="text-lg sm:text-xl text-slate-100 font-normal max-w-2xl leading-relaxed">
+          <p className="text-lg sm:text-base text-slate-100 font-normal max-w-2xl leading-relaxed">
             Reliable pathology services with state-of-the-art technology and expert professionals. 
             Your health deserves precision, speed, and care.
           </p>
@@ -118,22 +118,22 @@ const Hero = () => {
           {bottomCards.map((card, idx) => (
             <div 
               key={idx}
-              className="group bg-white border border-slate-100 hover:border-emerald-500/40 p-6 rounded-3xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer flex flex-col items-start"
+              className="group bg-white/20 backdrop-blur-xl border border-white/20 hover:border-emerald-500/40 p-6 rounded-3xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer flex flex-col items-start"
             >
               {/* Icon Container with Custom Hover Background Color Change */}
-              <div className="text-4xl mb-4 bg-slate-100 group-hover:bg-emerald-50 p-3 rounded-2xl group-hover:scale-110 transition-all duration-300 ease-in-out">
+              <div className="text-4xl mb-4 bg-white/30 group-hover:bg-emerald-500/30 p-3 rounded-2xl group-hover:scale-110 transition-all duration-300 ease-in-out">
                 {card.icon}
               </div>
               
-              <h3 className="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+              <h3 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
                 {card.title}
               </h3>
               
-              <p className="text-sm text-slate-600 mt-2 leading-relaxed">
+              <p className="text-sm text-slate-200 mt-2 leading-relaxed">
                 {card.desc}
               </p>
               
-              <div className="text-emerald-600 font-semibold text-sm mt-4 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <div className="text-emerald-400 font-semibold text-sm mt-4 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 Learn More <ArrowRight className="w-4 h-4" />
               </div>
             </div>

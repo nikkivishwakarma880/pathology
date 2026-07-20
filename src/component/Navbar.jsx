@@ -113,9 +113,9 @@ const Navbar = () => {
 
         {/* Desktop Action Buttons */}
         <div className="hidden lg:flex items-center gap-4">
-          <button className="p-2 text-slate-500 hover:text-emerald-600 hover:bg-slate-100 rounded-full transition-all" aria-label="Search">
+          {/* <button className="p-2 text-slate-500 hover:text-emerald-600 hover:bg-slate-100 rounded-full transition-all" aria-label="Search">
             <Search className="w-5 h-5" />
-          </button>
+          </button> */}
           
           <button className="flex items-center gap-2 px-4 py-2 border border-slate-200 rounded-full text-slate-700 font-medium hover:bg-slate-50 hover:border-slate-300 transition-all">
             <User className="w-4 h-4 text-emerald-600" />
