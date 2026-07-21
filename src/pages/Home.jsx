@@ -5,6 +5,7 @@ import ContactCTA from '../component/home/ContentCTA'
 import Gallery from '../component/home/Gallry'
 import OurExpert from '../component/home/OurExpert'
 import Testimonials from '../component/home/Testimonials'
+import FAQ from '../component/home/FAQ'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Gallery />
       <OurExpert />
       <Testimonials />
+      <FAQ />
       
     </div>
   )
